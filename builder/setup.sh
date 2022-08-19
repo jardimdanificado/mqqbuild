@@ -107,7 +107,7 @@ case "$TARGET" in
 			fi
 		fi
 
-		[[ -e src/shell.html ]] || cp raylib/src/minshell.html src/shell.html
+		[[ -e lib/shell.html ]] || cp raylib/src/minshell.html lib/shell.html
 
 		source emsdk/emsdk_env.sh
 		cd raylib/src
