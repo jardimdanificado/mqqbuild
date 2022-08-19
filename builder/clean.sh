@@ -1,5 +1,5 @@
 #!/bin/bash
-rm *.exe
 rm -r android/build
+rm -r build/*
 rm -r assets/*
-cp -r ../src/assets/* assets/*
+cp -r ../src/assets/* assets/
