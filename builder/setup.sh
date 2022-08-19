@@ -14,7 +14,7 @@
 source config.sh
 
 # Set up directory structure
-mkdir --parents include src assets lib/$TARGET
+mkdir --parents include src assets build lib/$TARGET
 
 # Stop building if an error occurs
 set -e

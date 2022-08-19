@@ -16,7 +16,7 @@
 #
 source config.sh
 
-./clean.sh
+
 
 # Add release or debug flags
 if [[ -z "$DEBUG" ]]; then
@@ -27,6 +27,8 @@ fi
 
 # Run the setup if the project hasn't been set up yet
 [[ -e lib/$TARGET ]] || ./setup.sh
+
+./clean.sh
 
 # Build options for each target
 case "$TARGET" in
@@ -69,7 +71,7 @@ esac
 # Don't run the project if build fails
 set -e
 
-$CC $SRC -Iinclude -Llib/$TARGET -o $NAME$EXT \
+$CC $SRC -Iinclude -Llib/$TARGET -o build/$NAME$EXT \
 	-lraylib -D$PLATFORM $FLAGS $TARGET_FLAGS
 
 # itch.io expects html5 games to be named index.html, js/data/wasm filenames can
