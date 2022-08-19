@@ -74,10 +74,10 @@ case "$TARGET" in
 		# run setup again
 		ARCH="x86_64"
 
-		if command -v $ARCH-w64-mingw32-gcc > /dev/null; then
+		if command -v $ARCH-w64-mingw32-g++ > /dev/null; then
 			cd raylib/src
-			make CC=$ARCH-w64-mingw32-gcc AR=$ARCH-w64-mingw32-ar OS=Windows_NT || \
-			make CC=$ARCH-w64-mingw32-gcc AR=$ARCH-w64-mingw32-ar OS=Windows_NT -e
+			make CC=$ARCH-w64-mingw32-g++ AR=$ARCH-w64-mingw32-ar OS=Windows_NT || \
+			make CC=$ARCH-w64-mingw32-g++ AR=$ARCH-w64-mingw32-ar OS=Windows_NT -e
 			mv libraylib.a ../../lib/$TARGET
 			cp raylib.h ../../include
 			make clean || make clean -e || rm -fv *.o
