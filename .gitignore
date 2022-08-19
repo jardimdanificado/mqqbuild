@@ -4,10 +4,6 @@ android/build
 android/ndk
 android/sdk
 
-include/raylib.h
-lib
-raylib
-
 game
 *.exe
 *.apk
