@@ -52,7 +52,7 @@ case "$TARGET" in
 		CC="em++"
 		EXT=".html"
 		PLATFORM="PLATFORM_WEB"
-		TARGET_FLAGS="-s ASYNCIFY -s USE_GLFW=3 -s TOTAL_MEMORY=67108864 \
+		TARGET_FLAGS="-s MINIFY_HTML=0 -s ASYNCIFY -s USE_GLFW=3 -s TOTAL_MEMORY=67108864 \
 		-s FORCE_FILESYSTEM=1 --shell-file lib/shell.html --preload-file assets"
 		source emsdk/emsdk_env.sh
 		;;
@@ -76,7 +76,7 @@ $CC $SRC -Iinclude -Llib/$TARGET -o build/$NAME$EXT \
 
 # itch.io expects html5 games to be named index.html, js/data/wasm filenames can
 # stay the same
-[[ "$TARGET" = "Web" ]] && mv $NAME.html index.html
+[[ "$TARGET" = "Web" ]] && mv build/$NAME.html build/index.html
 
 # ______________________________________________________________________________
 #

@@ -1,2 +1,2 @@
 #!/bin/bash
-rm -r build include lib assets raylib
+rm -r build include lib assets raylib emsdk
