@@ -53,7 +53,7 @@ case "$TARGET" in
 		EXT=".html"
 		PLATFORM="PLATFORM_WEB"
 		TARGET_FLAGS="-s ASYNCIFY -s USE_GLFW=3 -s TOTAL_MEMORY=67108864 \
-		-s FORCE_FILESYSTEM=1 --shell-file src/shell.html --preload-file assets"
+		-s FORCE_FILESYSTEM=1 --shell-file lib/shell.html --preload-file assets"
 		source emsdk/emsdk_env.sh
 		;;
 
