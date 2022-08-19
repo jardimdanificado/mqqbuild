@@ -16,6 +16,8 @@
 #
 source config.sh
 
+./clean.sh
+
 # Add release or debug flags
 if [[ -z "$DEBUG" ]]; then
 	FLAGS="$FLAGS $RELEASE_FLAGS"
