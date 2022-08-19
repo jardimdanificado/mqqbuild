@@ -32,20 +32,20 @@ case "$TARGET" in
 		# To build for 32-bit, set ARCH to i686 in both build and setup.sh, then
 		# run setup again
 		ARCH="x86_64"
-		CC="$ARCH-w64-mingw32-gcc"
+		CC="$ARCH-w64-mingw32-g++"
 		EXT=".exe"
 		PLATFORM="PLATFORM_DESKTOP"
 		TARGET_FLAGS="-lopengl32 -lgdi32 -lwinmm -static -Wl,--subsystem,windows"
 		;;
 
 	"Linux")
-		CC="gcc"
+		CC="g++"
 		PLATFORM="PLATFORM_DESKTOP"
 		TARGET_FLAGS="-lGL -lm -lpthread -ldl -lrt -lX11"
 		;;
 
 	"Web")
-		CC="emcc"
+		CC="em++"
 		EXT=".html"
 		PLATFORM="PLATFORM_WEB"
 		TARGET_FLAGS="-s ASYNCIFY -s USE_GLFW=3 -s TOTAL_MEMORY=67108864 \

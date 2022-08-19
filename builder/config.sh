@@ -9,7 +9,7 @@
 NAME=game
 
 # Files to compile. You can add multiple files by separating by spaces.
-SRC="src/*.c"
+SRC="../src/main.cpp"
 
 # Platform, one of Windows_NT, Linux, Web, Android. Defaults to your OS.
 # This can be set from the command line: TARGET=Android ./build.sh
@@ -32,7 +32,7 @@ DEBUG_FLAGS="-DDEBUG -O0 -g -Wall -Wextra -Wpedantic"
 # Path to the Java JDK. This folder should contain a bin folder which has javac
 # and some other tools. On Linux, if Java was installed from a package manager,
 # the Java path should be somewhere in /usr/lib/jvm.
-JAVA=/usr/lib/jvm/java-18-openjdk-amd64
+JAVA=/usr/lib/jvm/java-8-openjdk-amd64
 
 # The developer and package name for the app: com.$DEV_NAME.$PKG_NAME
 DEV_NAME=raylib
