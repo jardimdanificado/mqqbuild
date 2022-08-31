@@ -6,10 +6,10 @@
 # ______________________________________________________________________________
 #
 # Executable name, extension is added depending on target platform.
-NAME=game
+NAME=estadonovo
 
 # Files to compile. You can add multiple files by separating by spaces.
-SRC="../src/main.cpp"
+SRC="../src/main.cc ./build/maqquina.o"
 
 # Platform, one of Windows_NT, Linux, Web, Android. Defaults to your OS.
 # This can be set from the command line: TARGET=Android ./build.sh
@@ -35,11 +35,11 @@ DEBUG_FLAGS="-DDEBUG -O0 -g -Wall -Wextra -Wpedantic"
 JAVA=/usr/lib/jvm/java-8-openjdk-amd64
 
 # The developer and package name for the app: com.$DEV_NAME.$PKG_NAME
-DEV_NAME=raylib
+DEV_NAME=jardimdanificado
 PKG_NAME=$NAME
 
 # The name of the app shown in the launcher.
-APP_NAME=Game
+APP_NAME=estadonovo
 
 # App version, version code should be incremented by 1 and version name is the
 # human readable version.
