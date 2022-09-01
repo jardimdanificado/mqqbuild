@@ -1,8 +1,15 @@
 .vscode/
 
-android/build
-android/ndk
-android/sdk
+builder/android/build
+builder/android/ndk
+builder/android/sdk
+builder/assets
+builder/include
+builder/build
+builder/lib
+builder/raylib
+builder/emsdk
+/src
 
 game
 *.exe
@@ -14,3 +21,6 @@ index.html
 *.wasm
 *.js
 *.data
+*.a
+*.appimage
+*.o

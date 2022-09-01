@@ -71,7 +71,7 @@ esac
 # Don't run the project if build fails
 set -e
 
-$CC ../src/system/maqquina.cc -o ./build/maqquina.o -c -L. -lraylib -D$PLATFORM $FLAGS $TARGET_FLAGS
+$CC ../src/maqquina/maqquina.cc -o ./build/maqquina.o -c -L. -lraylib -D$PLATFORM $FLAGS $TARGET_FLAGS
 
 $CC $SRC -Iinclude -Llib/$TARGET -o build/$NAME$EXT \
 	-lraylib -D$PLATFORM $FLAGS $TARGET_FLAGS
